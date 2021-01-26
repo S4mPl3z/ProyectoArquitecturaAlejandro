@@ -5,10 +5,11 @@ using UnityEngine;
 public class ObjectPooling : MonoBehaviour
 {
 
-    static Dictionary<int, Queue<GameObject>> pool = new Dictionary<int, Queue<GameObject>>();
+    static Dictionary<int, Queue<GameObject>> pool = new Dictionary<int, Queue<GameObject>>(); //Se crea un diccionario, a nombre de pool, Usamos el Queue
+    // para así utilizar correctamente el Object Pooling en este caso.
         
 
-    public static void PreInstancia(GameObject objetoInstaciar, int Cantidad)
+    public static void PreInstancia(GameObject objetoInstaciar, int Cantidad) // Se crea un método para realizar una preinstaciación gracias al for, Haciendolo sin fin.
     {
         pool.Add(objetoInstaciar.GetInstanceID(), new Queue<GameObject>());
 
@@ -20,7 +21,7 @@ public class ObjectPooling : MonoBehaviour
         }
     }
 
-    public static void Reutilizar(GameObject objetoInstanciar, Vector3 Posicion, Quaternion rotacion)
+    public static void Reutilizar(GameObject objetoInstanciar, Vector3 Posicion, Quaternion rotacion) //Se crea el método reutilizar para asignar posicion, rotación y se activa la bala.
     {
         if (pool.ContainsKey(objetoInstanciar.GetInstanceID()))
         {
