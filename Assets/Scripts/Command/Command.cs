@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Command //Se crea la clase Command, con un Execute para realizar el comando que tenemos ideado.
+//Aparece en el Assets / My Assets / Nombre del Script.
+[CreateAssetMenu(menuName = "My Assets/ Command")]
+
+public abstract class Command : ScriptableObject //Se crea la clase Command, con un Execute para realizar el comando que tenemos ideado.
 {
     public abstract void Execute(Material Azul, GameObject go);
 }

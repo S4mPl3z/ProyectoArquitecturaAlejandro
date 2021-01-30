@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectPooling : MonoBehaviour
+//Aparece en el Assets / My Assets / Nombre del Script.
+[CreateAssetMenu(menuName = "My Assets/ Object Pooling")]
+
+public class ObjectPooling : ScriptableObject
 {
 
     static Dictionary<int, Queue<GameObject>> pool = new Dictionary<int, Queue<GameObject>>(); //Se crea un diccionario, a nombre de pool, Usamos el Queue

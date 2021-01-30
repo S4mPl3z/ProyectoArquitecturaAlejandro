@@ -242,6 +242,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Objeto: {fileID: 2100000, guid: bc2dffbf02ac5754083e39688a81a2c9, type: 2}
   Objeto2: {fileID: 2100000, guid: 5c016b0d1f72e0f469c9f14159c7369b, type: 2}
+  cambiarAzul: {fileID: 0}
+  cambiarRojo: {fileID: 0}
 --- !u!4 &1051891277
 Transform:
   m_ObjectHideFlags: 0
@@ -447,6 +449,7 @@ GameObject:
   - component: {fileID: 1761873073}
   - component: {fileID: 1761873072}
   - component: {fileID: 1761873077}
+  - component: {fileID: 1761873079}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -581,6 +584,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cadencia: 2
   prefabBala: {fileID: 1773922596}
+--- !u!114 &1761873079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761873071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13ef93383cf73664989fcc54770dd129, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1773922596 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 20345185889887607, guid: 02e6386bc8b22d947bce586357381f35,
