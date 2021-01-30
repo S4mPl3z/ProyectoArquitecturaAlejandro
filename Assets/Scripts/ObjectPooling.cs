@@ -6,8 +6,8 @@ public class ObjectPooling : MonoBehaviour
 {
 
     static Dictionary<int, Queue<GameObject>> pool = new Dictionary<int, Queue<GameObject>>(); //Se crea un diccionario, a nombre de pool, Usamos el Queue
-    // para así utilizar correctamente el Object Pooling en este caso.
-        
+                                                                                               // para así utilizar correctamente el Object Pooling en este caso.
+
 
     public static void PreInstancia(GameObject objetoInstaciar, int Cantidad) // Se crea un método para realizar una preinstaciación gracias al for, Haciendolo sin fin.
     {

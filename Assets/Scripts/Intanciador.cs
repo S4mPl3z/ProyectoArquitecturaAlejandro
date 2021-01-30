@@ -9,7 +9,7 @@ public class Intanciador : MonoBehaviour
     public GameObject prefabBala;
      void Start()
     {
-        ObjectPooling.PreInstancia(prefabBala, 4); //Se usa la Preinstanciacion programada anteriormente, para crear 4 objetos, en donde aparecerán los objetos.
+        ObjectPooling.PreInstancia(prefabBala, 1); //Se usa la Preinstanciacion programada anteriormente, para crear 4 objetos, en donde aparecerán los objetos.
 
         InvokeRepeating("instanciar", 0, Cadencia); //Se invoca el método instanciar a forma de repetición para que no acabe el bucle. 
     }
